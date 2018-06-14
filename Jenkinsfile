@@ -9,6 +9,9 @@ pipeline {
         }
         stage('Test') {
             steps {
+                sh 'uname'
+                sh 'hostname'
+                sh 'sudo apt install maven'
                 sh 'mvn clean'
                 sh 'mvn install'
                 sh 'mvn package'
