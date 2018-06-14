@@ -15,6 +15,7 @@ pipeline {
                 sh 'mvn clean'
                 sh 'mvn install'
                 sh 'mvn package'
+                sh 'printenv'
                 echo 'Testing..'
             }
         }
