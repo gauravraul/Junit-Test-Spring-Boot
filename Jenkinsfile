@@ -16,6 +16,7 @@ pipeline {
                 sh 'mvn install'
                 sh 'mvn package'
                 sh 'printenv'
+                sh 'surefire-report:report'
                 echo 'Testing..'
             }
         }
