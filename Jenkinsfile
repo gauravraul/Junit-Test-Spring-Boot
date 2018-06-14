@@ -12,7 +12,7 @@ pipeline {
                 sh 'uname -a'
                 sh 'cat /etc/*release*'
                 sh 'hostname'
-                sh 'sudo apt install maven'
+                sh 'apt install maven'
                 sh 'mvn clean'
                 sh 'mvn install'
                 sh 'mvn package'
